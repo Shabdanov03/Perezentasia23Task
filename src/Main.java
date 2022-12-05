@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
 
         /**Практикалык тапшырма:
          Classes.Movie:
@@ -51,7 +51,7 @@ public class Main {
         Director director6 = new Director("David", "Fincher");// social network
 
         List<Movie> movies = new ArrayList<>();
-        movies.add(new Movie("Iron man", 2011, "fantastic", director, new ArrayList<>(List.of(new Cast("Robert Downey", "Iron man")))));
+        movies.add(new Movie("Iron man", 2011, "fantastic", director, new ArrayList<>(List.of(new Cast("Robert Downey", "Tony Stark")))));
         movies.add(new Movie("Maverick", 2022, "War", director1, new ArrayList<>(List.of(new Cast("Tom Cruise", "Jesus")))));
         movies.add(new Movie("Batman", 2008, "fantastic", director2, new ArrayList<>(List.of(new Cast("Matthew McMcNaught", "Cooper")))));
         movies.add(new Movie("Interstellar", 2014, "spice", director2, new ArrayList<>(List.of(new Cast("Christian Bale", "Batman")))));
@@ -78,17 +78,17 @@ public class Main {
             System.out.println("ENTER THE COMMAND:");
             int number = new Scanner(System.in).nextInt();
             switch (number) {
-                case 1: {
+                case 1 -> {
                     System.out.println(find.getAllMovies(movies));
                     break;
                 }
-                case 2: {
+                case 2 -> {
                     System.out.println(" Enter movie name :");
                     String movieName = new Scanner(System.in).nextLine();
                     find.findMovieByName(movies, movieName);
                     break;
                 }
-                case 3: {
+                case 3 -> {
                     System.out.println("1.Sort by year ascending:\n" +
                             "2.Sort by year descending:");
                     int num = new Scanner(System.in).nextInt();
@@ -102,7 +102,7 @@ public class Main {
                     }
                     break;
                 }
-                case 4: {
+                case 4 -> {
                     System.out.println("1.Sort by name A to Z:\n" +
                             "2.Sort by name Z to A:");
                     int num = new Scanner(System.in).nextInt();
@@ -116,42 +116,43 @@ public class Main {
                     }
                     break;
                 }
-                case 5: {
+                case 5 -> {
                     sort.sortByDirector(movies);
                     break;
                 }
-                case 6: {
+                case 6 -> {
                     System.out.println(" Enter actor name :");
                     String actorName = new Scanner(System.in).nextLine();
                     find.findMovieByActorName(movies, actorName);
                     break;
                 }
-                case 7: {
+                case 7 -> {
                     System.out.println(" Enter director name :");
                     String directorName = new Scanner(System.in).nextLine();
                     find.findMovieByDirector(movies, directorName);
                     break;
                 }
-                case 8: {
+                case 8 -> {
                     System.out.println("Enter the year : ");
                     int year = new Scanner(System.in).nextInt();
                     find.findMovieByYear(movies, year);
                     break;
                 }
-                case 9: {
+                case 9 -> {
                     System.out.println(" Enter the role :");
                     String role = new Scanner(System.in).nextLine();
                     find.findMovieByRole(movies, role);
                     break;
                 }
-                case 10: {
+                case 10 -> {
                     System.out.println(" Enter by description : ");
                     String description = new Scanner(System.in).nextLine();
                     find.findMovieByDescription(movies, description);
                     break;
                 }
-                default: {
-                    System.out.println(" No such command !");break;
+                default -> {
+                    System.out.println(" No such command !");
+                    break;
                 }
             }
         }
