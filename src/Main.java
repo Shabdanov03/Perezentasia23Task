@@ -51,14 +51,14 @@ public class Main {
         Director director6 = new Director("David", "Fincher");// social network
 
         List<Movie> movies = new ArrayList<>();
-        movies.add(new Movie("Iron man", 2011, "fantastic", director, new ArrayList<>(List.of(new Cast("Robert Downey", "Tony Stark")))));
-        movies.add(new Movie("Maverick", 2022, "War", director1, new ArrayList<>(List.of(new Cast("Tom Cruise", "Jesus")))));
-        movies.add(new Movie("Batman", 2008, "fantastic", director2, new ArrayList<>(List.of(new Cast("Matthew McMcNaught", "Cooper")))));
-        movies.add(new Movie("Interstellar", 2014, "spice", director2, new ArrayList<>(List.of(new Cast("Christian Bale", "Batman")))));
-        movies.add(new Movie("Venom", 2018, "fantastic", director3, new ArrayList<>(List.of(new Cast("Tom Hardy", "Venom")))));
-        movies.add(new Movie("Thor", 2012, "fantastic", director4, new ArrayList<>(List.of(new Cast("Chris Hemsworth", "Thor")))));
-        movies.add(new Movie("Spider man", 2019, "fantastic", director5, new ArrayList<>(List.of(new Cast("Tom Holland", "Spider man")))));
-        movies.add(new Movie("Social Network", 2013, "Business", director6, new ArrayList<>(List.of(new Cast("Jesse Eisenberg", "Mark Zuckerberg")))));
+        movies.add(new Movie("Iron man", 2011, "fantastic", director, new ArrayList<>(List.of(new Cast("Robert Downey", "Tony Stark"),new Cast("Gwyneth Kate Paltrow","Pepper Pots")))));
+        movies.add(new Movie("Maverick", 2022, "War", director1, new ArrayList<>(List.of(new Cast("Tom Cruise", "Jesus"),new Cast("Miles Teller","Bradley 'Rooster' Bradshaw")))));
+        movies.add(new Movie("Batman", 2008, "fantastic", director2, new ArrayList<>(List.of(new Cast("Matthew McMcNaught", "Cooper"),new Cast("Jessica Chastain","Murph")))));
+        movies.add(new Movie("Interstellar", 2014, "spice", director2, new ArrayList<>(List.of(new Cast("Christian Bale", "Batman"),new Cast("Michael Caine"," Alfred")))));
+        movies.add(new Movie("Venom", 2018, "fantastic", director3, new ArrayList<>(List.of(new Cast("Tom Hardy", "Venom"),new Cast("Michelle Williams","Anne Weying")))));
+        movies.add(new Movie("Thor", 2012, "fantastic", director4, new ArrayList<>(List.of(new Cast("Chris Hemsworth", "Thor"),new Cast("Natalie Portman","Jane Foster")))));
+        movies.add(new Movie("Spider man", 2019, "fantastic", director5, new ArrayList<>(List.of(new Cast("Tom Holland", "Spider man"),new Cast("Zendaya","Mary Jay")))));
+        movies.add(new Movie("Social Network", 2013, "Business", director6, new ArrayList<>(List.of(new Cast("Jesse Eisenberg", "Mark Zuckerberg"),new Cast("Andrew Garfield","Eduardo Saverin")))));
 
         Sort sort = new Sort();
         Find find = new Find();
